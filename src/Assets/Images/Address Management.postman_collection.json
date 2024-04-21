@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "a03ab53a-06b4-4681-aea4-cdd5659cf7ca",
+		"name": "Address Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Regions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/admin/address/regions",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"admin",
+						"address",
+						"regions"
+					]
+				},
+				"description": "In this case \"Get All Regions\" is defined and used.\n\nIt is a **GET** method.\n\nFROM THIS API VENDOR CAN Get All Regions."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/admin/address/3/cities",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"admin",
+						"address",
+						"3",
+						"cities"
+					]
+				},
+				"description": "In this case \"Get Cities\" is defined and used.\n\nIt is a **GET** method.\n\nFROM THIS API VENDOR CAN Get Get Cities."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Areas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/admin/address/1/areas",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"admin",
+						"address",
+						"1",
+						"areas"
+					]
+				},
+				"description": "In this case \"Get Areas\" is defined and used.\n\nIt is a **GET** method.\n\nFROM THIS API VENDOR CAN Get Areas."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjkwNzhlZDU4NTQ3MTY2OWY0NWZjNTRiYTg4MzM0YzQxMDc3NzI4MmMyZDNiMzlkMjRhNWE1MDAxODMwMTYyNTRkZTE4MjVhMGEwNDkyNzQiLCJpYXQiOjE2NDEyNzU3MTcuNjAwMjQ3LCJuYmYiOjE2NDEyNzU3MTcuNjAwMjUxLCJleHAiOjE2NzI4MTE3MTcuNTI3ODg1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pEhVvs-mU-fa_K6razz83m7BAjjKEQgdYCG0sIut2zKMzYVvEA7X7AuuTMI1daF9B1_9ryLdaRMn_aUi0Yec44qiAJuVnEpCkTGlCqHkUz5FWsYHyOk3RKxJNL56bfJCQNvup1ora3pJTN_C4sFA8Wd_-4ipHSiS13AbA16CgYc5VigkNBNQ8z2NQxUAIs1Gyx7ZUwXeYrGQ2tJWBlvrfbeDC4nqEA6M1MkikvifmVfAfUyo7bBY3gDftjWkGCuj4dZ5TECGEPHurpQLS1iMytRsp7O7mrN_RGX-3b67WxwFTP8CI4j04TkIGxb5_eqb619CcgAmNnGqFnquC6Ut9-KW3IQ8OgkN4vv2I9CRX6v_d4o3rWuTuJAdtPkHfv0kCYSXS-zZwp0Kd_MZOLFMJ0cj8x_vA5XiptMv0tg0JNQqb4jt9X8lO3RjnmaaRsk6cLZEShWEkkNj1sEFEFiW0c7sXqfS6q2r3CqV-p0RMjXHcdHkaR0VG77DJC7f5BGkLUWWX7ldzDkSaU0ZzjUTQ5fgRtR1ni4rREy1Ahu0So1p7npgttnDdSyAqkAS2zj7e_ctSWrrVzep1UPuz7C7bfqdOCaebFlmhZfB08_P4ttqNMXV-bB_KnrR_h5e_8wis7SywBosV3JhLed0TAmnY0iauvOz9rTqrWq3Z_zLFL0",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

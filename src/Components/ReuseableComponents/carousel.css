@@ -1,0 +1,45 @@
+.test img{
+    opacity: 0.5;
+}
+
+.quickView-parent .quickView{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #e5371b;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.quickView-parent:hover .quickView{
+    right: 16px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.icon{
+    color: #bbbbbb;
+}
+
+.quickView:hover .icon{
+    color: white;
+}
+
+.quickView:hover + .image-scale{
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 480px){
+    .quickView-parent .quickView{
+        height: 30px;
+    }
+}

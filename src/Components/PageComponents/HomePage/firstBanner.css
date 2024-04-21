@@ -1,0 +1,177 @@
+.banner-border::before{
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    bottom: 0px;
+    left: 0px;
+    /* transition: height 0.1s linear, width 0.2s linear 0.5s; */
+}
+
+.banner-border::after{
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    border: 1px solid transparent;
+    top: 0px;
+    right: 0px;
+}
+
+.banner-border:hover::before{
+    height: 196.8px;
+    width: 1164px;
+    border: 1px solid red;
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.2s linear, width 0.4s linear 0.2s;
+}
+
+.banner-border:hover::after{
+    height: 196.8px;
+    width: 1164px;
+    border: 1px solid red;
+    border-left: none;
+    border-top: none;
+    transition: height 0.2s linear, width 0.4s linear 0.2s;
+}
+
+/* Hover design 2 */
+
+.border-new{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.border-new-child{
+    display: block;
+ }
+
+ .border-new::before, .border-new::after{
+    content:"";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #e5371b;
+  }
+
+  .border-new-child::before, .border-new-child::after{
+    content:"";
+    width:1px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #e5371b;
+  }
+
+  .border-new:hover::before, .border-new:hover::after{
+    width: 100%;
+  }
+
+  .border-new:hover .border-new-child::before, .border-new:hover .border-new-child::after{
+    height: 100%;
+  }
+
+  .border-new::before{
+    left: 50%;
+    top: 0;
+    transition-duration: 0.3s;
+  }
+  .border-new::after{
+    left: 50%;
+    bottom: 0;
+    transition-duration: 0.3s;
+  }
+  .border-new .border-new-child::before{
+    left: 0;
+    top: 50%;
+    transition-duration: 0.2s;
+  }
+  .border-new .border-new-child::after{
+    right: 0;
+    top: 50%;
+    transition-duration: 0.2s;
+  }
+  .border-new:hover::before, .border-new:hover::after{
+    left: 0;
+  }
+  .border-new:hover .border-new-child::before, .border-new:hover .border-new-child::after{
+    top: 0;
+  }
+
+
+/* Hover design 3 */
+
+.border-new2{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.border-new-child2{
+    display: block;
+ }
+
+ .border-new2::before, .border-new2::after{
+    content:"";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #999999;
+  }
+
+  .border-new-child2::before, .border-new-child2::after{
+    content:"";
+    width:1px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #999999;
+  }
+
+  .border-new2:hover::before, .border-new2:hover::after{
+    width: 100%;
+  }
+
+  .border-new2:hover .border-new-child2::before, .border-new2:hover .border-new-child2::after{
+    height: 100%;
+  }
+
+  .border-new2::before, .border-new2::after{
+    transition-delay: 0.4s;
+  }
+  .border-new2 .border-new-child2::before, .border-new2 .border-new-child2::after{
+    transition-delay: 0.2s;
+  }
+  .border-new2::before{
+    right: 0;
+    top: 0;
+  }
+  .border-new2::after{
+    left: 0;
+    bottom: 0;
+  }
+  .border-new2 .border-new-child2::before{
+    left: 0;
+    top: 0;
+  }
+  .border-new2 .border-new-child2::after{
+    right: 0;
+    bottom: 0;
+  }
+  .border-new2:hover::before, .border-new2:hover::after{
+    transition-delay: 0.2s;
+  }
+  .border-new2:hover .border-new-child2::before, .border-new2:hover .border-new-child2::after{
+    transition-delay: 0.4s;
+  }
+

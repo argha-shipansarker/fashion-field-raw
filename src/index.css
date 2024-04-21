@@ -1,0 +1,462 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.footer-text{
+    @apply font-DMSans text-base text-topBarTextColor font-medium hover:text-logobarElementBG cursor-pointer
+}
+
+.menu-text{
+    @apply font-DMSans text-topBarTextColor text-base hover:text-logobarElementBG cursor-pointer
+}
+
+.table-css table tr td {
+    border: 1px solid black;
+}
+
+.content-page-description ul {
+    list-style: unset!important;
+    margin-left: 40px!important;
+}
+
+.sizeTable td{
+    border: 1px solid;
+    text-align: center;
+}
+
+.react-slider__lens{
+    height: 150px!important;
+    width: 150px!important;
+}
+
+.react-slider__imgZoom{
+    height: 740px!important;
+    width: 770px!important;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* .react-slider__picture{
+    display: flex;
+    justify-content: center;
+} */
+
+.react-slider__picture img{
+    width: 16.875rem!important;
+}
+
+/* .react-slider__ul li {
+    width: 5.625rem!important;
+} */
+
+
+.react-slider__ul li img{
+    object-fit: contain!important;
+}
+
+.cart:not(.react-draggable-dragging){
+    transition: transform 0.5s ease-out;
+}
+
+
+/* html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+} */
+
+.react-slider__btnPrev{
+    display: none;
+}
+
+.react-slider__btnNext{
+    display: none;
+}
+
+.react-slider__container{
+    height: 340px;
+}
+
+.react-slider__areaZoom{
+    height: 100%;
+}
+
+.react-slider__picture{
+    height: 100%;
+}
+
+.react-slider__ul li{
+    height: 82px;
+    width: 69px!important;
+    flex: none!important;
+}
+
+.react-slider__ul{
+    justify-content: space-around!important;
+}
+
+.react-slider__ul li img{
+    object-fit: cover;
+}
+
+.react-slider__ul .active{
+    border-color: #e5371b!important;
+}
+
+.modalCarousel .react-slider__imgZoom{
+    height: 400px!important;
+    width: 370px!important;
+}
+
+
+
+
+.custom-height{
+    height: calc(100% - 80px);
+}
+
+/* input[type="checkbox"] {
+    filter: invert(100%);
+} */
+
+/* .changed-checkbox > input{
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+}
+
+.changed-checkbox > input:checked{
+    background-color: #252525;
+} */
+
+
+.carouselWithoutTab .slick-list {
+    width: 100%!important;
+}
+
+.cart .fa-shopping-bag{
+    color: #e5371b;
+}
+
+#root{
+    position: relative;
+}
+
+
+.react-responsive-modal-modal{
+    padding: 2.2rem!important;
+}
+
+.slick-thumb{
+    height: 100px;
+    display: flex!important;
+    justify-content: space-between;
+}
+
+.individual-product .slick-thumb{
+    height: 83px;
+    display: flex!important;
+    justify-content: space-between;
+}
+
+.slick-dots{
+    bottom: 5px!important;
+}
+
+.ft-slick__dots--custom {
+    height: 8px;
+    width: 8px;
+    background-color: lightgray;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 5px;
+    /* transition: width 0.3s ease-in-out; */
+}
+
+.filtering-banner .ft-slick__dots--custom{
+    background-color: white;
+}
+
+.slick-dots li {
+    width: 10px!important;
+    transition: width 0.3s ease-in-out;
+}
+
+.slick-thumb li {
+    height: 100%!important;
+    width: 31%!important;
+    margin: 0!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6!important;
+}
+
+.slick-dots .slick-active {
+    width: 20px;
+    margin-right: 25px;
+    transition: width 0.3s ease-in-out;
+}
+
+.slick-thumb .slick-active {
+    margin-right: 0px!important;
+    border: 1px solid #e5371b;
+    /* transition: all 0.3s ease; */
+}
+
+.slick-dots .slick-active .ft-slick__dots--custom {
+    width: 30px;
+    transition: width .5s ease-in-out;
+    background-color: red;
+}
+
+.slick-prev:before {
+    content: ""!important;
+
+}
+
+.slick-next:before {
+    content: ""!important;
+}
+
+.slick-prev
+{
+    top: -40px!important;
+    left: 92%!important;
+}
+
+.slick-next
+{
+    top: -40px!important;
+    right: 25px!important;
+}
+
+.modalCarousel .slick-prev {
+    top: 39%!important;
+    left: 15px!important;
+    z-index: 999;
+}
+
+.modalCarousel .slick-next{
+    top: 39%!important;
+    right: 15px!important;
+    z-index: 999;
+}
+
+.multiRow-carousel .slick-prev{
+    top: -25px!important;
+    left: 80%!important;
+}
+
+.multiRow-carousel .slick-next{
+    top: -25px!important;
+    right: 3px!important;
+}
+
+.slick-next:hover{
+    background-color: #e5371b!important;
+    color: white!important;
+}
+
+.slick-prev:hover{
+    background-color: #e5371b!important;
+    color: white!important;
+}
+
+.slick-center img{
+    opacity: 1.0!important;
+    transform: scale(1.25);
+    transition: all 1s;
+}
+
+.fa-star{
+    color: #ff9600;
+}
+.multiRow-carousel .fa-star{
+    font-size: 12px;
+}
+
+.fa-heart{
+    color: #bbbbbb;
+}
+
+.product-info .fa-heart{
+    color: black;
+}
+
+.fa-shopping-bag{
+    color: #bbbbbb;
+}
+
+.modal-heart:hover .fa-heart{
+    color: white;
+}
+
+.modal-heart .fa-heart {
+    color: #252525;
+}
+
+.new-arrival-filter .fa-star{
+    font-size: 9px;
+}
+
+.new-arrival-filter .fa-heart{
+    font-size: 10px;
+}
+
+.new-arrival-filter .fa-shopping-bag{
+    font-size: 10px;
+}
+
+.new-arrival-filter .slick-prev{
+    top: -20px!important;
+    left: 80%!important;
+}
+
+.new-arrival-filter .slick-next{
+    top: -20px!important;
+    right: 0!important;
+}
+
+.select-sorting .css-1s2u09g-control{
+    background-color: unset;
+}
+
+.select-sorting .css-1pahdxg-control{
+    background-color: unset;
+}
+
+.select-sorting .css-nw8knh-singleValue{
+    font-weight: 600;
+}
+
+.collapse-pannel{
+    overflow: hidden;
+    transition: height 0.5s ease-out;  
+}
+
+.men-clothing-collapse-pannel{
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+}
+
+@media screen and (max-width: 480px) {
+    .slick-prev{
+        top: -40px!important;
+        left: 65%!important;
+    }
+
+    .slick-next{
+        top: -40px!important;
+        right: 50px!important;
+    }
+
+    .dealsOfTheDay .slick-prev{
+        top: -50px!important;
+        left: 80%!important;
+    }
+
+    .dealsOfTheDay .slick-next{
+        top: -50px!important;
+        right: 0px!important;
+    }
+
+    .modalCarousel .slick-prev {
+        top: 39%!important;
+        left: 0px!important;
+        z-index: 999;
+    }
+    
+    .modalCarousel .slick-next{
+        top: 39%!important;
+        right: 0px!important;
+        z-index: 999;
+    }
+
+    .carouselWithoutTab .slick-next{
+        right: 36px!important;
+    }
+
+    .react-slider__imgZoom{
+        height: 0px!important;
+        width: 0px!important;
+    }
+
+    .modalCarousel .react-slider__imgZoom{
+        height: 0px!important;
+        width: 0px!important;
+    }
+
+    .react-slider__lens{
+        height: 0px!important;
+        width: 0px!important;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .slick-prev{
+        top: -40px!important;
+        left: 60%!important;
+    }
+
+    .slick-next{
+        top: -40px!important;
+        right: 50px!important;
+    }
+
+    .dealsOfTheDay .slick-prev{
+        top: -50px!important;
+        left: 76%!important;
+    }
+
+    .dealsOfTheDay .slick-next{
+        top: -50px!important;
+        right: 0px!important;
+    }
+
+    .multiRow-carousel .slick-prev{
+        top: -25px!important;
+        left: 76%!important;
+    }
+    
+    .multiRow-carousel .slick-next{
+        top: -25px!important;
+        right: 0px!important;
+    }
+
+    .carouselWithoutTab .slick-next{
+        right: 10px!important;
+    }
+
+    .carouselWithoutTab .slick-prev{
+        left: 73%!important;
+    }
+
+    .react-slider__imgZoom{
+        height: 0px!important;
+        width: 0px!important;
+    }
+
+    .modalCarousel .react-slider__imgZoom{
+        height: 0px!important;
+        width: 0px!important;
+    }
+
+    .react-slider__lens{
+        height: 0px!important;
+        width: 0px!important;
+    }
+
+    .modalCarousel{
+        width: 210px!important;
+    }
+
+}

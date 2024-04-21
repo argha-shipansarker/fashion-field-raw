@@ -1,0 +1,58 @@
+.first-banner{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.first-banner-child{
+    display: block;
+ }
+
+ .first-banner::before, .first-banner::after{
+    content:"";
+    width: 0;
+    height: 0.5px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #999999;
+  }
+
+  .first-banner-child::before, .first-banner-child::after{
+    content:"";
+    width:0.5px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #999999;
+  }
+
+  .first-banner:hover::before, .first-banner:hover::after{
+    width: 100%;
+  }
+
+  .first-banner:hover .first-banner-child::before, .first-banner:hover .first-banner-child::after{
+    height: 100%;
+  }
+
+  .first-banner::after{
+    right:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .first-banner .first-banner-child::after{
+    right:0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .first-banner::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .first-banner .first-banner-child::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+  }
